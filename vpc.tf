@@ -1,6 +1,7 @@
-module "vpc" {
-    source  = "terraform-google-modules/network/google"
-    version = "~> 1.0"
+module "network" {
+  source  = "app.terraform.io/Thos25/network/google"
+  version = "1.0.0"
+  # insert required variables here
 
     project_id   = var.project
     network_name = "gaurav-vpc"
